@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-16x16.png">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h1>Registration Form</h1>
+            <div class="form-control">
+                <label>Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter E-mail ID">
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Mobile Number:</label>
+                <input type="tel" id="mobile" placeholder="Enter 10 digit mobile number">
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Date of Birth:</label>
+                <input type="date" id="dob">
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="male" id="male">
+                        Male
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="female" id="female">
+                        Female
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="other" id="other">
+                        Other
+                    </label>
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Role:</label>
+                <select id="role">
+                    <option value="">Select a role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Administrator</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <span class="error"></span>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Retype password">
+                <span class="error"></span>
+            </div>
+            <input type="submit" id="btn" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
